@@ -1,5 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
+
+import '../shared_models/object0_value.dart';
 import '../shared_models/order.dart';
 
 part 'store_api_client.g.dart';
@@ -9,7 +11,7 @@ abstract class StoreApiClient {
   factory StoreApiClient(Dio dio, {String baseUrl}) = _StoreApiClient;
 
   @GET('/store/inventory')
-  Future<Object> getStoreInventory();
+  Future<Object0Value> getStoreInventory();
 
   @POST('/store/order')
   Future<Order> postStoreOrder({

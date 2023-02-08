@@ -1,4 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
+
 import 'category.dart';
 import 'tag.dart';
 
@@ -6,7 +7,7 @@ part 'pet.g.dart';
 
 @JsonSerializable()
 class Pet {
-  Pet({
+  const Pet({
     required this.name,
     required this.photoUrls,
     this.id,

@@ -4,7 +4,7 @@ part 'category.g.dart';
 
 @JsonSerializable()
 class Category {
-  Category({
+  const Category({
     required this.id,
     required this.name,
   });

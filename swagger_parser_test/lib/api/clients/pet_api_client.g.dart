@@ -207,7 +207,7 @@ class _PetApiClient implements PetApiClient {
     };
     queryParameters.removeWhere((k, v) => v == null);
     final _headers = <String, dynamic>{};
-    final _data = body;
+    final _data = Stream.fromIterable(body.readAsBytesSync().map((i) => [i]));
     final _result = await _dio
         .fetch<Map<String, dynamic>>(_setStreamType<ApiResponse>(Options(
       method: 'POST',

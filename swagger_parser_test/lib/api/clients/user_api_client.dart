@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
+
 import '../shared_models/user.dart';
 
 part 'user_api_client.g.dart';

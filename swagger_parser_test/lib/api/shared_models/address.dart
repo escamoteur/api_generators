@@ -4,7 +4,7 @@ part 'address.g.dart';
 
 @JsonSerializable()
 class Address {
-  Address({
+  const Address({
     required this.street,
     required this.city,
     required this.state,

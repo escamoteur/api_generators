@@ -19,13 +19,13 @@ class _StoreApiClient implements StoreApiClient {
   String? baseUrl;
 
   @override
-  Future<Object> getStoreInventory() async {
+  Future<Object0Value> getStoreInventory() async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     final _data = <String, dynamic>{};
-    final _result =
-        await _dio.fetch<Map<String, dynamic>>(_setStreamType<Object>(Options(
+    final _result = await _dio
+        .fetch<Map<String, dynamic>>(_setStreamType<Object0Value>(Options(
       method: 'GET',
       headers: _headers,
       extra: _extra,
@@ -37,7 +37,7 @@ class _StoreApiClient implements StoreApiClient {
               data: _data,
             )
             .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
-    final value = Object.fromJson(_result.data!);
+    final value = Object0Value.fromJson(_result.data!);
     return value;
   }
 

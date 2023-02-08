@@ -4,7 +4,7 @@ part 'tag.g.dart';
 
 @JsonSerializable()
 class Tag {
-  Tag({
+  const Tag({
     required this.id,
     required this.name,
   });

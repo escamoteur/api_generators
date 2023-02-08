@@ -4,7 +4,7 @@ part 'api_response.g.dart';
 
 @JsonSerializable()
 class ApiResponse {
-  ApiResponse({
+  const ApiResponse({
     required this.code,
     required this.type,
     required this.message,

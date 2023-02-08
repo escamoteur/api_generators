@@ -4,7 +4,7 @@ part 'order.g.dart';
 
 @JsonSerializable()
 class Order {
-  Order({
+  const Order({
     required this.id,
     required this.petId,
     required this.quantity,

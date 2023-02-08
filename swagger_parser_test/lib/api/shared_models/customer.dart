@@ -1,11 +1,12 @@
 import 'package:json_annotation/json_annotation.dart';
+
 import 'address.dart';
 
 part 'customer.g.dart';
 
 @JsonSerializable()
 class Customer {
-  Customer({
+  const Customer({
     required this.id,
     required this.username,
     required this.address,
